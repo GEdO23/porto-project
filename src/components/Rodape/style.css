@@ -1,0 +1,35 @@
+#rodape {
+    height: 12vh;
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-shrink: 0;
+
+    color: var(--branco-porto);
+    font-size: 1.4rem;
+    font-family: 'PortoRoobert-Medium';
+    
+    background: var(--preto-porto);
+    border-top: 1px solid var(--branco-porto);
+}
+
+#rodape >p {
+    opacity: .25;
+    font-size: 2rem;
+}
+
+/* RODAPE LINK */
+.rodape-link {
+    text-decoration: none;
+    color: var(--branco-porto);
+}
+
+.rodape-link:hover { color: var(--azul-porto); }
+/* ----- */
