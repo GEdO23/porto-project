@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --azul-porto: #01A1FD;
+    --azul-escuro-porto: #0046C7;
+    --branco-porto: #EFF4F0;
+    --preto-porto: #000000;
+
+    --azul-porto-seguro: #0065D0;
+    --azul-claro-porto-seguro: #35C9FF;
+    --azul-muito-claro-porto-seguro: #A4E4FE;
+}
+
+@font-face {
+    font-family: "PortoRoobert-Medium";
+    src: url("./fonts/PortoRoobert-Medium.otf");
+}
+
+@font-face {
+    font-family: "PortoRoobert-Semibold";
+    src: url("./fonts/PortoRoobert-SemiBold.otf");
+}
+
+@font-face {
+    font-family: "PortoRoobert-Bold";
+    src: url("./fonts/PortoRoobert-Bold.otf");
+}
+
+@font-face {
+    font-family: "icomoon";
+    src: url("./fonts/icomoon.ttf");
+}
