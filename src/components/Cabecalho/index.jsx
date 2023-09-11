@@ -21,6 +21,7 @@ export default function Cabecalho() {
         <Link to='/' className='page-link' >Placar</Link>
         <Link to='/' className='page-link' >Loja</Link>
         <Link to='/' className='page-link' >Configurações</Link>
+        <Link to='/' className='page-link' >Participantes</Link>
 
       </div>
       
