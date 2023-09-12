@@ -1,0 +1,41 @@
+#rodape {
+    position: absolute;
+    margin-top: 110vh;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    height: 12vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-shrink: 0;
+    
+    color: var(--branco-porto);
+    font-size: 1.4rem;
+    font-family: 'PortoRoobert-Medium';
+    
+    background: var(--preto-porto);
+    border-top: 1px solid var(--branco-porto);
+    
+}
+
+
+#rodape >p {
+    opacity: .25;
+    font-size: 2rem;
+}
+
+/* RODAPE LINK */
+.rodape-link {
+    text-decoration: none;
+    color: var(--branco-porto);
+}
+
+.rodape-link:hover { 
+    color: var(--azul-porto);
+    font-family: 'PortoRoobert-SemiBold'; 
+}
+/* ----- */

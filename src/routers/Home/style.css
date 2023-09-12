@@ -1,0 +1,14 @@
+main { padding-bottom: 2.5rem; }
+
+.secao-atividades {
+    padding: 25px 12px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 55px;
+
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
