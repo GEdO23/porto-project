@@ -1,7 +1,7 @@
 import SecaoAtividades from "../../components/SecaoAtividades";
-import './style.css'
+import './Atividades.css'
 
-export default function Home() {
+export default function Atividades() {
 
     return (
     <> 
