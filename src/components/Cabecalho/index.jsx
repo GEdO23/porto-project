@@ -13,15 +13,13 @@ export default function Cabecalho() {
     <>
     <header id='cabecalho' className='light'>
       <div id="pages">
-        <a href='https://www.portoseguro.com.br'>
+        <Link to='/'>
           <img className='logo-porto' src={logo} />
-        </a>
+        </Link>
 
-        <Link to='/' className='page-link' >Atividades</Link>
-        <Link to='/' className='page-link' >Placar</Link>
-        <Link to='/' className='page-link' >Loja</Link>
-        <Link to='/' className='page-link' >Configurações</Link>
-        <Link to='/' className='page-link' >Participantes</Link>
+        <Link to='/contratarseguro' className='page-link' >Contratar Seguro</Link>
+        <Link to='/gamificacao' className='page-link' >Atividades</Link>
+        <Link to='/equipe' className='page-link' >Participantes</Link>
 
       </div>
       
