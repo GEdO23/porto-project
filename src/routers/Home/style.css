@@ -1,5 +1,4 @@
 main {
-    height: 100vh;
     padding: 25px 12px;
     
     display: flex;
@@ -10,7 +9,7 @@ main {
     gap: 55px;
     flex-shrink: 0;
 
-    background: var(--porto-branco, #FFF);
+    background: var(--branco);
 }
 
 
