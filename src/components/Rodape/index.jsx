@@ -12,7 +12,7 @@ export default function Rodape() {
     <>
     <footer id='rodape' >
 
-      <img className='logo-omcorp' src={omcorp} />
+      {/*  <img className='logo-omcorp' src={omcorp} /> */ }
 
       <p>|</p><Link to='/' className='rodape-link' >Atividades</Link>
       <p>|</p><Link to='/' className='rodape-link' >Placar</Link>

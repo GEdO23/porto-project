@@ -1,10 +1,9 @@
 #rodape {
     position: absolute;
-    margin-top: 110vh;
     left: 0;
     right: 0;
 
-    width: 100%;
+    width: 100vw;
     height: 12vh;
     
     display: flex;
@@ -12,6 +11,7 @@
     align-items: center;
     gap: 50px;
     flex-shrink: 0;
+    flex-wrap: wrap;
     
     color: var(--branco-porto);
     font-size: 1.4rem;
