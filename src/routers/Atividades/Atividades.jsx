@@ -1,5 +1,5 @@
 import SecaoAtividades from '../../components/SecaoAtividades/index'
-import './style.css'
+import './Atividades.css'
 
 export default function Atividades() {
 
