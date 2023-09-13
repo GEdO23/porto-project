@@ -1,15 +1,21 @@
-import Card from '../../components/Card/Card'
-import './Home.css'
+import Card from '../../components/Card/Card';
+import './Home.css';
 
 export default function Home() {
-
-    return (
-    <> 
-    <main>
-      <Card tit={"Contratar Seguro"} desc={'Descrição'} link={'/contratarseguro'} seguro={false} />
-      <Card tit={"Gamificação"} desc={'Descrição'} link={'/gamificacao'} seguro={false} />
-    </main>
-    </>
-    )
-  }
-  
+  return (
+    <div className="home-container">
+      <Card 
+        tit={"Fazer Login"} 
+        desc={'Faça login para acessar sua área'} 
+        link={'/login'} 
+        seguro={false} 
+      />
+      <Card 
+        tit={"Registrar-se"} 
+        desc={'Crie uma conta para começar'} 
+        link={'/register'} 
+        seguro={false} 
+      />
+    </div>
+  )
+}
