@@ -1,0 +1,16 @@
+main {
+    height: 100vh;
+    padding: 25px 12px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 55px;
+    flex-shrink: 0;
+
+    background: var(--porto-branco, #FFF);
+}
+
+

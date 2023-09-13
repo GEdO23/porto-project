@@ -17,10 +17,8 @@ export default function Cabecalho() {
           <img className='logo-porto' src={logo} />
         </a>
 
+        <Link to='/' className='page-link' >Contratar Seguro</Link>
         <Link to='/' className='page-link' >Atividades</Link>
-        <Link to='/' className='page-link' >Placar</Link>
-        <Link to='/' className='page-link' >Loja</Link>
-        <Link to='/' className='page-link' >Configurações</Link>
         <Link to='/' className='page-link' >Participantes</Link>
 
       </div>

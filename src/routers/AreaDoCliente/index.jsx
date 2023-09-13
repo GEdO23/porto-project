@@ -1,6 +1,7 @@
-import './style.css'
 
-export default function Home() {
+
+
+export default function AreaDoCliente() {
 
     return (
     <> 
@@ -12,4 +13,3 @@ export default function Home() {
     </>
     )
   }
-  
