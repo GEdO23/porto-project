@@ -23,7 +23,7 @@
 }
 
 
-#rodape >p {
+#rodape > p {
     opacity: .25;
     font-size: 2rem;
 }
