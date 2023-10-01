@@ -1,25 +1,55 @@
 button {
 
-    $corBotaoOFF: #0064FF;
-    $corBotaoHOVER: #00A1FC;
-    $corBotaoON: #0046C7;
+    @mixin tamanho($largura, $altura, $margem, $padding) {
+        width: $largura;
+        height: $altura;
+        margin: $margem;
+        padding: $padding;
+    };
+
+    @mixin exibicao($direcao, $justificado, $alinhamento, $intervalo) {
+        display: flex;
+        flex-direction: $direcao;
+        justify-content: $justificado;
+        align-items: $alinhamento;
+        gap: $intervalo;
+    };
+
+    @mixin fontTexto($tamanho, $peso, $cor, $familia, $espacamento, $altura) {
+        font-size: $tamanho;
+        font-weight: $peso;
+        color: $cor;
+        font-family: $familia;
+        letter-spacing: $espacamento;
+        line-height: $altura;
+
+    };
+
+    @mixin borda($espessura, $estilo, $cor, $raio) {
+        border-width: $espessura;
+        border-style: $estilo;
+        border-color: $cor;
+        border-radius: $raio;
+    };
+
+    $corBotaoOFF: rgb(0, 70, 192);
+    $corBotaoHOVER: rgb(19, 129, 226);
+    $corBotaoON: rgb(38, 98, 201);
+    $fonteCor: rgb(64, 64, 64);
+    $fonteFamilia: 'Open-Sans', sans-serif;
+
+    @include tamanho(100%, 4.4rem, 0, 0 1.2rem);
+    @include exibicao(row, center, center, 0.8rem);
+    @include fontTexto(1.6rem, bold, $fonteCor, $fonteFamilia, 0.4px, 2rem);
+    @include borda(1px, solid, transparent, 0.4rem);
+
+    opacity: 1;
     
-    width: 100%;
-    height: 42px;
-    padding: 10px;
-    
-    color: #fff;
-    font-size: 1.6rem;
-    font-weight: bold;
-    font-family: "Open-Sans", sans-serif;
-    text-transform: uppercase;
-    
-    border: 1px solid $corBotaoOFF;
-    border-radius: 5px;
-    
+    cursor: pointer;
+
     background: $corBotaoOFF;
 
-    transition: background-color 200ms, color 200ms;
+    transition: all 0.3s ease 0s;
 
     &:hover {
         background: $corBotaoHOVER;
