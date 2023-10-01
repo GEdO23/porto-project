@@ -3,32 +3,49 @@
     $comprimento: 100%;
     $altura: 80px;
     
-    $corFundo: #fff;
-    $corPorto: #0046c7;
-    $corPortoSeguro: #0064ff;
+    $padding: 27.5px 25px;
     
-    $borda: 1px solid rgba(0, 0, 0, 0.2);
+    @mixin aparencia($dark-mode) {
+        @if $dark-mode == true {
+            background: #232323;
+            color: #ffffff;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
+            img:first-child, img:last-child {
+                filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(292deg) brightness(100%) contrast(103%);;
+            }
+            
+        } @else {
+            background: #ffffff;
+            color: #232323;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+            img:first-child, img:last-child {
+                filter: invert(8%) sepia(20%) saturate(17%) hue-rotate(315deg) brightness(97%) contrast(87%);;
+            }
+        }    
+    }
+
+    @mixin exibicao($justificado, $alinhamento) {
+        display: flex;
+        justify-content: $justificado;
+        align-items: $alinhamento;
+    }
 
     position: $posicao;
     width: $comprimento;
     height: $altura;
 
-    background: $corFundo; 
 
-    border-bottom: $borda;
+    padding: $padding;
 
-    padding: 27.5px 25px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .logoPorto {
-        height: 100%;
-        display: flex;
+    
+    @include exibicao(space-between, center);
+    @include aparencia(false);
+    
+    
+    & img {
+        cursor: pointer;
+        user-select: none;
     }
-
-
-
 }
