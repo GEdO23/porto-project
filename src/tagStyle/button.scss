@@ -1,13 +1,13 @@
 button {
 
-    @mixin tamanho($largura, $altura, $margem, $padding) {
+    @mixin tamanho($largura, $altura, $margem: 0, $padding: 0) {
         width: $largura;
         height: $altura;
         margin: $margem;
         padding: $padding;
     };
 
-    @mixin exibicao($direcao, $justificado, $alinhamento, $intervalo) {
+    @mixin exibicao($direcao: row, $justificado, $alinhamento, $intervalo: 0) {
         display: flex;
         flex-direction: $direcao;
         justify-content: $justificado;
@@ -15,7 +15,7 @@ button {
         gap: $intervalo;
     };
 
-    @mixin fontTexto($tamanho, $peso, $cor, $familia, $espacamento, $altura) {
+    @mixin fontTexto($tamanho: 1rem, $peso: normal, $cor: rgb(0, 0, 0), $familia: ('Open-Sans', sans-serif), $espacamento, $altura) {
         font-size: $tamanho;
         font-weight: $peso;
         color: $cor;
@@ -25,36 +25,49 @@ button {
 
     };
 
-    @mixin borda($espessura, $estilo, $cor, $raio) {
+    @mixin borda($espessura, $estilo: solid, $cor, $raio) {
         border-width: $espessura;
         border-style: $estilo;
         border-color: $cor;
         border-radius: $raio;
     };
 
-    $corBotaoOFF: rgb(0, 70, 192);
-    $corBotaoHOVER: rgb(19, 129, 226);
-    $corBotaoON: rgb(38, 98, 201);
-    $fonteCor: rgb(64, 64, 64);
-    $fonteFamilia: 'Open-Sans', sans-serif;
+    @include tamanho(
+        100%, 
+        4.4rem, 
+        $padding: 0 1.2rem
+    );
 
-    @include tamanho(100%, 4.4rem, 0, 0 1.2rem);
-    @include exibicao(row, center, center, 0.8rem);
-    @include fontTexto(1.6rem, bold, $fonteCor, $fonteFamilia, 0.4px, 2rem);
-    @include borda(1px, solid, transparent, 0.4rem);
+    @include exibicao(
+        row, 
+        center, 
+        center, 
+        0.8rem
+    );
+
+    @include fontTexto(
+        1.6rem, 
+        bold, 
+        rgb(64, 64, 64), 
+        $espacamento: 0.4px, 
+        $altura: 2rem
+    );
+
+    @include borda(
+        1px, 
+        $cor: transparent, 
+        $raio: 0.4rem
+    );
 
     opacity: 1;
-    
+    background: rgb(0, 70, 192);
     cursor: pointer;
-
-    background: $corBotaoOFF;
-
     transition: all 0.3s ease 0s;
 
     &:hover {
-        background: $corBotaoHOVER;
+        background: rgb(19, 129, 226);
     }
     &:active {
-        background: $corBotaoON;
+        background: rgb(38, 98, 201);
     }
 }
