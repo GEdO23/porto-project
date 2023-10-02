@@ -8,14 +8,13 @@ button {
     };
 
     @mixin exibicao($direcao: row, $justificado, $alinhamento, $intervalo: 0) {
-        display: flex;
         flex-direction: $direcao;
         justify-content: $justificado;
         align-items: $alinhamento;
         gap: $intervalo;
     };
 
-    @mixin fontTexto($tamanho: 1rem, $peso: normal, $cor: rgb(0, 0, 0), $familia: ('Open-Sans', sans-serif), $espacamento, $altura) {
+    @mixin fontTexto($tamanho: 1rem, $peso: normal, $cor: rgb(0, 0, 0), $familia, $espacamento, $altura) {
         font-size: $tamanho;
         font-weight: $peso;
         color: $cor;
@@ -32,8 +31,10 @@ button {
         border-radius: $raio;
     };
 
+    $fontFamilia: 'Open-Sans', sans-serif;
+
     @include tamanho(
-        100%, 
+        30%, 
         4.4rem, 
         $padding: 0 1.2rem
     );
@@ -45,12 +46,13 @@ button {
         0.8rem
     );
 
-    @include fontTexto(
+    @include fontTexto( 
         1.6rem, 
         bold, 
-        rgb(64, 64, 64), 
-        $espacamento: 0.4px, 
-        $altura: 2rem
+        #D1EFFE, 
+        $fontFamilia,
+        0.4px, 
+        2rem
     );
 
     @include borda(
@@ -66,6 +68,7 @@ button {
 
     &:hover {
         background: rgb(19, 129, 226);
+        width: 80%;
     }
     &:active {
         background: rgb(38, 98, 201);

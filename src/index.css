@@ -1,17 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('./tagStyle/button.scss');
+@import url('./tagStyle/texto.scss');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 0;
 }
 
-body {
-    overflow-x: hidden;
+html, body {
+    margin: 0px auto;
+}
+
+html {
     font-size: 62.5%;
 }
 
-:root {
-    --reg-txt: 1.6rem "Open-Sans", sans-serif;
+body {
+    display: block;
+    overflow-x: hidden;
 }
+

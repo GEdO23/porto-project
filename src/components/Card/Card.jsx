@@ -1,20 +1,40 @@
 import './Card.scss'
 
-export default function Card() {
+import PropTypes from 'prop-types'
 
+import Botao from '../Botao/Botao'
+
+function Card(props) {
 
   return (
     <>
     <section className='card'>
-        <img src="#" alt="#" />
+      
+      <div className='conteudoCard'>
+        <h1>{props.titulo}</h1>
 
-        <h2 className="titulo">Titulo</h2>
+        <p>{props.descricao}</p>
 
-        <p className="descricao">Descrição</p>
-
-        
+        <Botao text={props.btnTxt}/>
+      </div>
+      <div className='conteudoCard'>
+        <img src={props.img} alt={props.alt} />
+      </div>
 
     </section>
     </>
   )
-}
+} export default Card
+
+
+Card.defaultProps = {
+  btnTxt: 'Saiba mais'
+};
+
+Card.propTypes = {
+  titulo: PropTypes.string.isRequired,
+  descricao: PropTypes.string,
+  img: PropTypes.object,
+  alt: PropTypes.string,
+  btnTxt: PropTypes.string,
+};

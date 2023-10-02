@@ -1,13 +1,12 @@
-import './Error.css'
+import './Error.scss'
 
-
-export default function Error() {
+function Error() {
 
   return (
     <>
-    
-    <div>Error</div>
 
     </>
   )
-}
+} 
+
+export default Error

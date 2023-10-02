@@ -4,7 +4,7 @@ import menuIcon from '../../imgs/menu-icon.svg'
 import logo from '../../imgs/porto-logo.svg'
 import pfpIcon from '../../imgs/pfp-icon.svg'
 
-export default function Cabecalho() {
+function Cabecalho() {
 
   return (
     <>
@@ -17,3 +17,6 @@ export default function Cabecalho() {
     </>
   )
 }
+
+export default Cabecalho
+

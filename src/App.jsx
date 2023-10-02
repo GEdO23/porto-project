@@ -1,15 +1,21 @@
-/* eslint-disable no-unused-vars */
+import './App.scss'
+
 import { Outlet } from "react-router-dom";
 import Cabecalho from "./components/Cabecalho";
 
 
-export default function App() {
+function App() {
   return (
   <>
 
     <Cabecalho />
-    <Outlet />
+    <main>
+      <Outlet />
+
+    </main>
 
   </>
   )
 }
+
+export default App

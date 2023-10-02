@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types'
 
-export default function Botao(props) {
-
+function Botao(props) {
     Botao.propTypes = {
-        text: PropTypes.string.isRequired
+        text: PropTypes.string.isRequired,
     }
 
     return (
@@ -11,4 +10,6 @@ export default function Botao(props) {
             <button type="button" className="btn">{props.text}</button>
         </>
     )
-}
+} 
+
+export default Botao
