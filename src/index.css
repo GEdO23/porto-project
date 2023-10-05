@@ -1,51 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('./tagStyle/button.scss');
+@import url('./tagStyle/texto.scss');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 0;
 }
 
-html { font-size: 62.5%; }
+html, body {
+    margin: 0px auto;
+}
+
+html {
+    font-size: 62.5%;
+}
 
 body {
+    display: block;
     overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
-:root {
-    --omcorp-cor-principal: #282D37;
-    --omcorp-cor-secundaria: #F5F5F5;
-    
-    --branco: #ffffff;
-    --preto: #000000;
-
-    --portoseguro-cor-principal: #01A1FD;
-    --portoseguro-cor-secundaria: #0046C7;
-    --portoseguro-cor-terciaria: #0065D0;
-    --portoseguro-cor-clara: #35C9FF;
-    --portoseguro-cor-muitoclara: #A4E4FE;
-
-    --porto-font: "PortoRoobert-Medium";
-    --porto-font-bold: "PortoRoobert-Bold";
-}
-
-@font-face {
-    font-family: "PortoRoobert-Medium";
-    src: url("./fonts/PortoRoobert-Medium.otf");
-}
-
-@font-face {
-    font-family: "PortoRoobert-Semibold";
-    src: url("./fonts/PortoRoobert-SemiBold.otf");
-}
-
-@font-face {
-    font-family: "PortoRoobert-Bold";
-    src: url("./fonts/PortoRoobert-Bold.otf");
-}
-
-@font-face {
-    font-family: "icomoon";
-    src: url("./fonts/icomoon.ttf");
-}

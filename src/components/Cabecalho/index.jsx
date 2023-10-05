@@ -1,41 +1,22 @@
-import { Link } from 'react-router-dom'
+import './style.scss'
 
-import './style.css'
-
-import heart from '../../imgs/heart.svg'
-import star from '../../imgs/star.svg'
+import menuIcon from '../../imgs/menu-icon.svg'
 import logo from '../../imgs/porto-logo.svg'
+import pfpIcon from '../../imgs/pfp-icon.svg'
 
-
-export default function Cabecalho() {
+function Cabecalho() {
 
   return (
     <>
-    <header id='cabecalho' className='light'>
-      <div id="pages">
-        <Link to='/'>
-          <img className='logo-porto' src={logo} />
-        </Link>
+    <header id="cabecalho">
+      <img src={menuIcon} alt="Menu" />
+      <img src={logo} alt="Porto" />
+      <img src={pfpIcon} alt="Usuario" />
 
-        <Link to='/contratarseguro' className='page-link' >Contratar Seguro</Link>
-        <Link to='/gamificacao' className='page-link' >Atividades</Link>
-        <Link to='/equipe' className='page-link' >Participantes</Link>
-
-      </div>
-      
-      <div id="user-stats">
-        <div id="life-stat">
-          <img src={heart} alt="Vidas: " />
-          <p id='id-qtd-lifes' >3</p>
-        </div>
-
-        <div id="point-stat">
-          <img src={star} alt="Pontos: " />
-          <p id='id-qtd-points' >0</p>
-        </div>
-
-      </div>
     </header>
     </>
   )
 }
+
+export default Cabecalho
+

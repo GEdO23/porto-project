@@ -1,0 +1,6 @@
+main {
+    @mixin topo($espacamentoCabecalho: 80px, $espacamentoPadrao: 25px) {
+        padding-top: calc($espacamentoCabecalho + $espacamentoPadrao);
+    };
+    @include topo($espacamentoPadrao: 0px);
+}
