@@ -1,29 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import "./Helpers.scss";
+@import "./Helpers/Helpers.scss";
+@import './Helpers/TokensCor/Texto.scss';
+@import './Helpers/TokensCor/Superficie.scss';
+@import './Helpers/Primitivos/Raio.scss';
 
 main {
   padding-top: 80px;
 }
 
 h1 {
-  @include fontTexto(3.6rem, bold, #1f1f1f, $fonte-porto, 0, 4rem);
+  @include fontTexto(3.6rem, bold, $cl-txt-primario, $fonte-os, 0, 4rem);
   display: block;
 }
 
 p {
-  @include fontTexto(1.6rem, normal, #404040, $fonte-porto, 0, 2.4rem);
+  @include fontTexto(1.6rem, normal, $cl-txt-secundario, $fonte-porto, 0, 2.4rem);
   display: block;
 }
 
 button {
   @include tamanho(30%, 4.4rem, 0, 0 1.2rem);
   @include exibicao(row, center, center, 0.8rem);
-  @include fontTexto(1.6rem, bold, #d1effe, $fonte-os, 0.4px, 2rem);
+  @include fontTexto(1.6rem, bold, $cl-txt-inverso, $fonte-os, 0.4px, 2rem);
 
   background: $cl-sup-btn-off;
 
   border: none;
-  border-radius: 0.4rem;
+  border-radius: $rai-cnc;
 
   cursor: pointer;
   transition: all 0.3s ease 0s;

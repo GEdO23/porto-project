@@ -1,12 +1,13 @@
-@import "../../Helpers.scss";
+@import "../../Helpers/Helpers.scss";
+@import '../../Helpers/TokensCor/Superficie.scss';
 
 #cabecalho {
-    $pad: 10px 20px;
-    // 27.5px 25px
+    $pad: 27.5px 25px;
     @include tamanho(100vw, 80px, 0, $pad);
     @include exibicao(row, space-between, center, 0);
 
     position: fixed;
+    background: $cl-sup-primaria;
     box-shadow: 0 5px 5px rgba(0, 0, 0, .25);
 
     & img {
