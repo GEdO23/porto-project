@@ -1,9 +1,9 @@
 import "./App.scss";
 
 import { Outlet } from "react-router-dom";
-import Cabecalho from "./components/Cabecalho";
+import Cabecalho from "./components/Cabecalho/Cabecalho";
 
-function App() {
+export default function App() {
   return (
     <>
       <Cabecalho />
@@ -13,4 +13,3 @@ function App() {
     </>
   );
 }
-export default App;

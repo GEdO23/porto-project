@@ -1,0 +1,65 @@
+@mixin tamanho($largura, $altura, $margem: 0, $padding: 0) {
+    width: $largura;
+    height: $altura;
+    margin: $margem;
+    padding: $padding;
+}
+
+@mixin exibicao($direcao: row, $justificado, $alinhamento, $intervalo: 0) {
+    display: flex;
+    flex-direction: $direcao;
+    justify-content: $justificado;
+    align-items: $alinhamento;
+    gap: $intervalo;
+}
+
+@mixin fontTexto($tamanho, $peso, $cor, $familia, $espacamento, $altura) {
+    font-size: $tamanho;
+    font-weight: $peso;
+    color: $cor;
+    font-family: $familia;
+    letter-spacing: $espacamento;
+    line-height: $altura;
+}
+
+$fonte-porto: "Porto Roobert",
+sans-serif !global;
+$fonte-os: "Open-Sans",
+sans-serif !global;
+
+// PRIMITIVOS
+$cl-none: #ffffff;
+$cl-minn: #eff4f0;
+$cl-smll: #b3b3b3;
+$cl-half: #808080;
+$cl-bigg: #404040;
+$cl-maxx: #1f1f1f;
+$cl-full: #000000;
+
+$cl-azl-celest: #01a1fd;
+$cl-azl-violet: #0046c7;
+$cl-azl-verdad: #0065D0;
+$cl-azl-ceu-vivid: #35c9ff;
+$cl-azl-n-fotogr: #a4e4fe;
+
+$cl-harv-gld: #D29619;
+$cl-pers-blu: #1932c8;
+$cl-card-red: #c81932;
+
+$es-zro: 0;
+$es-cnc: 5;
+$es-dz: 10;
+$es-vntcinc: 25;
+$es-cnqnta: 50;
+$es-cem: 100;
+
+$mrg-cnc: 5;
+$mrg-qinz: 15;
+$mrg-vntcinc: 25;
+$mrg-cnqnta: 50;
+$mrg-cem: 100;
+
+$rai-cnc: 5;
+$rai-dz: 10;
+$rai-vntcinc: 25;
+$rai-cnqnta: 50;
