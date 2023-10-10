@@ -1,21 +1,16 @@
-import './App.scss'
+import "./App.scss";
 
 import { Outlet } from "react-router-dom";
 import Cabecalho from "./components/Cabecalho";
 
-
 function App() {
   return (
-  <>
-
-    <Cabecalho />
-    <main>
-      <Outlet />
-
-    </main>
-
-  </>
-  )
+    <>
+      <Cabecalho />
+      <main>
+        <Outlet />
+      </main>
+    </>
+  );
 }
-
-export default App
+export default App;

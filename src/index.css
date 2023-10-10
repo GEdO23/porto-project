@@ -1,24 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('./tagStyle/button.scss');
-@import url('./tagStyle/texto.scss');
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
 }
 
-html, body {
-    margin: 0px auto;
+html,
+body {
+  margin: 0px auto;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    display: block;
-    overflow-x: hidden;
+  display: block;
+  overflow-x: hidden;
 }
-
