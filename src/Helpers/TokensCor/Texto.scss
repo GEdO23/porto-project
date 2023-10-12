@@ -1,0 +1,16 @@
+@import '../Primitivos/Cores/EscalasDeCinza.scss';
+@import '../Primitivos/Cores/Marca.scss';
+@import '../Primitivos/Cores/Outros.scss';
+
+// TOKENS
+// Cores de texto
+$cl-txt-primario: $cl-full !global;
+$cl-txt-secundario: $cl-bigg !global;
+$cl-txt-terciario: $cl-half !global;
+$cl-txt-inverso: $cl-minn !global;
+$cl-txt-marca: $cl-azl-verdad !global;
+$cl-txt-inpt-ph: $cl-full !global;
+$cl-txt-btn: $cl-maxx !global;
+$cl-txt-laranja: $cl-harv-gld !global;
+$cl-txt-azul: $cl-pers-blu !global;
+$cl-txt-vermelha: $cl-card-red !global;

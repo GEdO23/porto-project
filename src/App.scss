@@ -1,68 +1,40 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-
-@mixin fontTexto($tamanho, $peso, $cor, $familia, $espacamento, $altura) {
-  font-size: $tamanho;
-  font-weight: $peso;
-  color: $cor;
-  font-family: $familia;
-  letter-spacing: $espacamento;
-  line-height: $altura;
-}
-
-$fontePorto: "Porto Roobert", sans-serif;
-$fonteOS: "Open-Sans", sans-serif;
+@import "./Helpers/Helpers.scss";
+@import './Helpers/TokensCor/Texto.scss';
+@import './Helpers/TokensCor/Superficie.scss';
+@import './Helpers/Primitivos/Raio.scss';
 
 main {
   padding-top: 80px;
 }
 
 h1 {
-  @include fontTexto(3.6rem, bold, #1f1f1f, $fontePorto, 0, 4rem);
+  @include fontTexto(3.6rem, bold, $cl-txt-primario, $fonte-os, 0, 4rem);
   display: block;
 }
 
 p {
-  @include fontTexto(1.6rem, normal, #404040, $fontePorto, 0, 2.4rem);
+  @include fontTexto(1.6rem, normal, $cl-txt-secundario, $fonte-porto, 0, 2.4rem);
   display: block;
 }
 
 button {
-  @include fontTexto(1.6rem, bold, #d1effe, $fonteOS, 0.4px, 2rem);
+  @include tamanho(30%, 4.4rem, 0, 0 1.2rem);
+  @include exibicao(row, center, center, 0.8rem);
+  @include fontTexto(1.6rem, bold, $cl-txt-inverso, $fonte-os, 0.4px, 2rem);
 
-  width: 30%;
-  height: 4.4rem;
-  padding: 0 1.2rem;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.8rem;
-
-  background: rgb(0, 70, 192);
+  background: $cl-sup-btn-off;
 
   border: none;
-  border-radius: 0.4rem;
+  border-radius: $rai-cnc;
 
   cursor: pointer;
   transition: all 0.3s ease 0s;
 
   &:hover {
-    background: rgb(19, 129, 226);
+    background: $cl-sup-btn-hover;
   }
 
   &:active {
-    background: rgb(38, 98, 201);
-  }
-}
-
-@media (min-width: 1224px) {
-  h1 {
-    font-size: 4.8rem;
-    line-height: 5.2rem;
-  }
-
-  p {
-    font-size: 2rem;
-    line-height: 2.8rem;
+    background: $cl-sup-btn-on;
   }
 }

@@ -1,0 +1,13 @@
+@import '../Primitivos/Cores/EscalasDeCinza.scss';
+@import '../Primitivos/Cores/Marca.scss';
+
+// TOKENS
+// Cores de superficie
+$cl-sup-primaria: $cl-none !global;
+$cl-sup-secundaria: $cl-minn !global;
+$cl-sup-terciaria: $cl-half !global;
+$cl-sup-inversa: $cl-maxx !global;
+$cl-sup-marca: $cl-azl-verdad !global;
+$cl-sup-btn-off: $cl-maxx !global;
+$cl-sup-btn-hover: $cl-bigg !global;
+$cl-sup-btn-on: $cl-azl-verdad !global;

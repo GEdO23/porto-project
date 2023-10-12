@@ -1,0 +1,24 @@
+{
+  "usuario": {
+    "cpf": null,
+    "nome": null,
+    "contatos": {
+      "email": null,
+      "telefone": null
+    },
+    "cep": null,
+    "endereco": {
+      "pais": null,
+      "estado": null,
+      "cidade": null,
+      "bairro": null,
+      "rua": null,
+      "numero": null
+    },
+    "genero": null,
+    "valorRenda": null,
+    "estadoCivil": null,
+    "dataNascimento": null,
+    "dataCadastro": null
+  }
+}
