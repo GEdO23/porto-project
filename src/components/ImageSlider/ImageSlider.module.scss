@@ -1,0 +1,55 @@
+
+// const sliderStyle = {
+//     height: "100%",
+//     position: "relative",
+//   };
+
+//   const dotsContainerStyle = {
+//     display: "flex",
+//     justifyContent: "center",
+//     alignItems: "end",
+//   };
+
+//   const slideStyle = {
+//     width: "100%",
+//     height: "100%",
+//     backgroundPosition: "center",
+//     backgroundSize: "cover",
+//     backgroundImage: `url(${slides[currentIndex].url})`,
+//     ...dotsContainerStyle,
+//   };
+
+//   const arrowStyle = {
+//     position: "absolute",
+//     top: "50%",
+//     transform: "translate(0, -50%)",
+//     fontSize: "45px",
+//     color: "#fff",
+//     zIndex: 1,
+//     cursor: "pointer",
+//   };
+
+@mixin arrowStyle($posicao) {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 1;
+
+    font-size: 45px;
+    cursor: pointer;
+
+    @if $posicao==left or $posicao==right {
+        color: #fff;
+        @if $posicao==left { left: 32px }
+        @else { right: 32px }
+    } @else { color: #f00 }
+}
+
+.sliderContainer {
+    height: 100%;
+    position: relative;
+
+    .arrowLeft { @include arrowStyle(left) }
+    .arrowRight { @include arrowStyle(right) }
+};
+

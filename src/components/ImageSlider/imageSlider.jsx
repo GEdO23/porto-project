@@ -1,57 +1,19 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
+import style from './ImageSlider.module.scss';
 
-export default function ImageSlider({ slides }) {
+export default function ImageSlider({slides, titulo, descricao}) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const sliderStyles = {
-    height: "100%",
-    position: "relative",
-  };
-
-  const dotsContainerStyles = {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: 'end',
-    backdropFilter: 'invert(80%)'
-  };
-
-  const slideStyles = {
+  const slideStyle = {
     width: "100%",
     height: "100%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "end",
     backgroundPosition: "center",
     backgroundSize: "cover",
     backgroundImage: `url(${slides[currentIndex].url})`,
-    ...dotsContainerStyles
-  };
-
-  const leftArrowStyles = {
-    position: "absolute",
-    top: "50%",
-    transform: "translate(0, -50%)",
-    left: "32px",
-    fontSize: "45px",
-    color: "#fff",
-    zIndex: 1,
-    cursor: "pointer",
-  };
-
-  const rightArrowStyles = {
-    position: "absolute",
-    top: "50%",
-    transform: "translate(0, -50%)",
-    right: "32px",
-    fontSize: "45px",
-    color: "#fff",
-    zIndex: 1,
-    cursor: "pointer",
-  };
-  // ⃝ ●
-
-
-  const dotStyles = {
-    margin: "0 3px",
-    cursor: "pointer",
-    fontSize: "20px",
   };
 
   const goToPrevious = () => {
@@ -66,24 +28,30 @@ export default function ImageSlider({ slides }) {
     setCurrentIndex(newIndex);
   };
 
-  const goToSlide = (slideIndex) => {
-    setCurrentIndex(slideIndex);
-  };
+  const goToSlide = (slideIndex) => setCurrentIndex(slideIndex);
 
   return (
     <>
-      <div style={sliderStyles}>
-        <div style={leftArrowStyles} onClick={goToPrevious}>
+      <div className={style.sliderContainer}>
+        <div className={style.arrowLeft} onClick={goToPrevious}>
           ⇦
         </div>
-        <div style={rightArrowStyles} onClick={goToNext}>
+        <div className={style.arrowRight} onClick={goToNext}>
           ⇨
         </div>
-        <div style={slideStyles}>
+        <div style={slideStyle}>
+          <div>
+            <h1>{titulo}</h1>
+            <p>{descricao}</p>
+          </div>
           {slides.map((slide, slideIndex) => (
             <div
               key={slideIndex}
-              style={dotStyles}
+              style={{
+                margin: "0 3px",
+                fontSize: "20px",
+                cursor: "pointer",
+              }}
               onClick={() => goToSlide(slideIndex)}
             >
               ●
@@ -94,3 +62,9 @@ export default function ImageSlider({ slides }) {
     </>
   );
 }
+
+ImageSlider.propTypes = {
+  slides: PropTypes.string.isRequired,
+  titulo: PropTypes.string.isRequired,
+  descricao: PropTypes.string.isRequired,
+};

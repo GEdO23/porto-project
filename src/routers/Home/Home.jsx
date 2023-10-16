@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <div style={containerStyles}>
-      <ImageSlider slides={slides} />
+      <ImageSlider slides={slides} titulo={'e'} descricao={'e'} />
     </div>
   );
 }
