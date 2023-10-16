@@ -11,7 +11,7 @@ export default function ImageSlider({slides}) {
   const slideStyles = {
     width: '100%',
     height: '100%',
-    borderRadius: '10px',
+    filter: 'brightness(75%) blur(.8px)',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundImage: `url(${slides[currentIndex].url})`,
@@ -22,7 +22,6 @@ export default function ImageSlider({slides}) {
   <div style={sliderStyles}>
     <div style={slideStyles} />
   </div>
-  
   </>
   );
 }

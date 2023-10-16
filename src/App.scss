@@ -3,10 +3,6 @@
 @import './Helpers/TokensCor/Superficie.scss';
 @import './Helpers/Primitivos/Raio.scss';
 
-main {
-  padding-top: 80px;
-}
-
 h1 {
   @include fontTexto(3.6rem, bold, $cl-txt-primario, $fonte-os, 0, 4rem);
   display: block;

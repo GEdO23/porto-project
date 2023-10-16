@@ -8,9 +8,9 @@ export default function Home() {
   ];
 
   const containerStyles = {
-    width: '500px',
-    height: '280px',
-    margin: '0 auto'
+    width: '800px',
+    height: '500px',
+    margin: '0 auto',
   };
 
   return (
