@@ -1,7 +1,8 @@
-@import "./Helpers/Helpers.scss";
-@import './Helpers/TokensCor/Texto.scss';
-@import './Helpers/TokensCor/Superficie.scss';
-@import './Helpers/Primitivos/Raio.scss';
+@import "/public/Helpers/Helpers.scss";
+@import "/public/Helpers/TokensCor/Texto.scss";
+@import "/public/Helpers/TokensCor/Superficie.scss";
+@import "/public/Helpers/TokensCor/Borda.scss";
+@import '/public/Helpers/Primitivos/Raio.scss';
 
 h1 {
   @include fontTexto(3.6rem, bold, $cl-txt-primario, $fonte-os, 0, 4rem);

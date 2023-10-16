@@ -28,3 +28,7 @@ $fonte-porto: "Porto Roobert",
 sans-serif !global;
 $fonte-os: "Open-Sans",
 sans-serif !global;
+
+@mixin fullCenter() {@include exibicao(row, center, center, 0)}
+@mixin bottomCenter() {@include exibicao(row, center, end, 0)}
+@mixin centerLeft() {@include exibicao(row, left, center, 0)}
