@@ -1,11 +1,15 @@
-import "./Home.scss";
+import ImageSlider from "../../components/ImageSlider/imageSlider";
 
 export default function Home() {
+  const slides = [
+    { url: "", title: "" },
+    { url: "", title: "" },
+    { url: "", title: "" },
+  ];
+
   return (
-    <div className="homeContainer">
-      <h1>Hello World</h1>
-      <h2>Hello World</h2>
-      <button>hello world</button>
+    <div>
+      <ImageSlider slides={slides} />
     </div>
-  )
+  );
 }

@@ -1,3 +1,8 @@
-export default function imageSlider() {
-  return <div>imageSlider</div>;
+export default function ImageSlider() {
+  return (
+  <>
+  
+  
+  </>
+  );
 }
