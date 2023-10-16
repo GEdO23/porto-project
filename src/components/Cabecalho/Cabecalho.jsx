@@ -1,16 +1,16 @@
 import style from "./Cabecalho.module.scss";
 
-import menuIcon from "../../imgs/menu-icon.svg";
-import logo from "../../imgs/porto-logo.svg";
-import pfpIcon from "../../imgs/pfp-icon.svg";
+import menu from "/public/icons/menu-icon.svg";
+import logoPorto from "/public/icons/porto-logo.svg";
+import profilePicture from "/public/icons/pfp-icon.svg";
 
 export default function Cabecalho() {
   return (
     <>
       <header id={style.cabecalho}>
-        <img src={menuIcon} alt="Menu" />
-        <img src={logo} alt="Porto" />
-        <img src={pfpIcon} alt="Usuario" />
+        <img src={menu} alt="Menu" />
+        <img src={logoPorto} alt="Porto" />
+        <img src={profilePicture} alt="Usuario" />
       </header>
     </>
   );
