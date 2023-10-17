@@ -8,9 +8,14 @@ export default function Cabecalho() {
   return (
     <>
       <header id={style.cabecalho}>
-        <img src={menu} alt="Menu" />
-        <img src={logoPorto} alt="Porto" />
-        <img src={profilePicture} alt="Usuario" />
+        <img src={menu} alt="Menu" id="icon-menu" onClick={
+          () => {
+            document.body.classList.toggle('modo-escuro');
+            console.log('deveria ter alterado o modo');
+          }
+        }/>
+        <img src={logoPorto} alt="Porto" id="icon-porto" />
+        <img src={profilePicture} alt="Usuario" id="icon-usuario" />
       </header>
     </>
   );

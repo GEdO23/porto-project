@@ -4,7 +4,7 @@ function Error() {
 
   return (
     <>
-
+    <h1>ERRO SACANA</h1>
     </>
   )
 } 

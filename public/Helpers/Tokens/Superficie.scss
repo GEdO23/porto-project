@@ -1,0 +1,13 @@
+@use '../Primitivos/Cores' as cor;
+// TOKENS
+// Cores de superficie
+$primaria: cor.$cor-0;
+$secundaria: cor.$cor-50;
+$terciaria: cor.$cor-600;
+$inversa: cor.$cor-900;
+$marca: cor.$azul-celeste;
+
+// Cores de superficie de botão
+$botao-default: cor.$cor-900;
+$botao-hover: cor.$cor-800;
+$botao-active: cor.$azul-celeste;

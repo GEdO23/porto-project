@@ -1,0 +1,55 @@
+@use "/public/Helpers/Tokens/Margem"as margem;
+@use "/public/Helpers/Tokens/Espacamento"as espacamento;
+@use '/public/Helpers/Tokens/Raio'as raio;
+
+@use "/public/Helpers/Tokens/Borda"as borda;
+@use "/public/Helpers/Tokens/Texto"as txt;
+@use "/public/Helpers/Tokens/Superficie"as sup;
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+$fonte-porto: "Porto Roobert",
+sans-serif;
+$fonte-os: "Open-Sans",
+sans-serif;
+
+@mixin fontTexto($tamanho: 1rem, $peso: normal, $cor: txt.$primario, $familia: $fonte-os, $letra-espacamento: 0, $linha-altura: 0) {
+    font-size: $tamanho;
+    font-weight: $peso;
+    color: $cor;
+    font-family: $familia;
+    letter-spacing: $letra-espacamento;
+    line-height: $linha-altura;
+}
+
+// Styles de Objetos no Site
+
+@mixin botao() {
+    @include fontTexto(1.6rem, bold, txt.$inverso, $fonte-os, 0.4px, 2rem);
+
+    width: 30%;
+    height: 4.4rem;
+    margin: 0;
+    padding: 1.2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+
+    background: sup.$botao-default;
+
+    border: none;
+    border-radius: raio.$min;
+
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+        background: sup.$botao-hover;
+    }
+
+    &:active {
+        background: sup.$botao-active;
+    }
+}

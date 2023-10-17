@@ -1,0 +1,10 @@
+@use '../Primitivos/Cores' as cor;
+
+// TOKENS
+// Cores de borda
+$primaria: cor.$cor-1000;
+$secundaria: cor.$cor-900;
+$terciaria: cor.$cor-600;
+$inversa: cor.$cor-50;
+$marca: cor.$azul-celeste;
+$botao: cor.$cor-900;

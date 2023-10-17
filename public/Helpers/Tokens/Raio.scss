@@ -1,0 +1,8 @@
+@use '../Primitivos/Raio' as size;
+
+// TOKENS
+// Raios de Borda
+$raio-0: 0;
+$min: size.$raio-5; 
+$medio: size.$raio-10; 
+$max: size.$raio-50;

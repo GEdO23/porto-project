@@ -3,8 +3,8 @@ import db from '../../../db.json';
 
 export default function Home() {
   const containerStyles = {
-    width: '1000px',
-    height: '600px',
+    width: '1300px',
+    height: '650px',
     margin: '0 auto'
   };
 
