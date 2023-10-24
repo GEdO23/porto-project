@@ -21,6 +21,31 @@
     "dataNascimento": null,
     "dataCadastro": null
   },
+  "contratos": {
+    "cdNumeroDeSerie": {
+      "nmModelo": null,
+      "nmMarca": null,
+      "stTipo": null,
+      "dtCompra": null,
+      "vlCompra": null,
+      "notaFiscal": null,
+      "stSituacao": null,
+      "dtAnoFabricacao": null,
+      "dsPaisOrigem": null,
+      "vlAvaliado": null,
+      "acessorios": {
+        "stVelocimetro": false,
+        "stGps": false,
+        "stCiclocomputador": false
+      },
+      "foto": null,
+      "vistoria": {
+        "dtVistoria": null,
+        "stResultado": null,
+        "stEstadoConservacao": null
+      }
+    }
+  },
   "slides": [
     { 
       "url": "/public/imgs/img-bike.jpg", 
