@@ -20,5 +20,22 @@
     "estadoCivil": null,
     "dataNascimento": null,
     "dataCadastro": null
-  }
+  },
+  "slides": [
+    { 
+      "url": "/public/imgs/img-bike.jpg", 
+      "titulo": "Contrate sua bike com IA",
+      "descricao": "Um novo meio de contratar seguros bike, utilizando inteligência artificial para uma nova experiência!"
+    },
+    { 
+      "url": "/public/imgs/img-game.jpg", 
+      "titulo": "Gamificacao",
+      "descricao": "Venha ver nosso novo curso gamificado criado especialmente para você! Aprenda mais sobre seguros bike conosco de forma gratuita e eficiente."
+    },
+    { 
+      "url": "/public/imgs/img-corp.jpg", 
+      "titulo": "Equipe de Desenvolvimento",
+      "descricao": "Aqui você pode ver cada membro da equipe que realizou este projeto! Venha conhecer nossos membros da startup OM. Corp."
+    }
+  ]
 }

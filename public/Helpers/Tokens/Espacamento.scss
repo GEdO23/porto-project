@@ -1,0 +1,13 @@
+@use '../Primitivos/Espacamento' as size;
+
+// TOKENS
+// Espaçamentos
+$espacamento-0: 0;
+$medio: size.$espacamento-25; 
+$texto: size.$espacamento-5; 
+$imagem: size.$espacamento-25;
+$icone: size.$espacamento-5;
+$objeto: size.$espacamento-50;
+$input: size.$espacamento-25;
+$botao: size.$espacamento-25;
+$card: size.$espacamento-5;

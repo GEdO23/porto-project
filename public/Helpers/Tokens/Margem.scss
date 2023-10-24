@@ -1,0 +1,12 @@
+@use '../Primitivos/Margem' as size;
+
+// TOKENS
+// Tamanhos de Margem
+$margem-zero: 0;
+$padrao: size.$margem-25;
+
+$min: size.$margem-5;
+$pequena: size.$margem-15;
+$media: size.$margem-25;
+$grande: size.$margem-50;
+$max: size.$margem-100;

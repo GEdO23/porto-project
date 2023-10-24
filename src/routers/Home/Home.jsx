@@ -1,11 +1,16 @@
-import "./Home.scss";
+import ImageSlider from "../../components/ImageSlider/imageSlider";
+import db from '../../../db.json';
 
 export default function Home() {
+  const containerStyles = {
+    width: '1300px',
+    height: '650px',
+    margin: '0 auto'
+  };
+
   return (
-    <div className="homeContainer">
-      <h1>Hello World</h1>
-      <h2>Hello World</h2>
-      <button>hello world</button>
+    <div style={containerStyles}>
+      <ImageSlider slides={db.slides}/>
     </div>
-  )
+  );
 }

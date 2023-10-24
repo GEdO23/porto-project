@@ -1,40 +1,29 @@
-@import "./Helpers/Helpers.scss";
-@import './Helpers/TokensCor/Texto.scss';
-@import './Helpers/TokensCor/Superficie.scss';
-@import './Helpers/Primitivos/Raio.scss';
+@use "/public/Helpers/Functions"as style;
+@use '/public/Helpers/Tokens/Texto.scss' as txt;
 
-main {
-  padding-top: 80px;
-}
+$fonte-porto: "Porto Roobert",
+sans-serif;
+$fonte-os: "Open-Sans",
+sans-serif;
 
 h1 {
-  @include fontTexto(3.6rem, bold, $cl-txt-primario, $fonte-os, 0, 4rem);
+  @include style.fontTexto(3.6rem, bold, txt.$primario, $fonte-os, 0, 4rem);
   display: block;
+
+  .modo-escuro & {
+    @include style.fontTexto(3.6rem, bold, txt.$primario-escuro, $fonte-os, 0, 4rem);
+  }
 }
 
 p {
-  @include fontTexto(1.6rem, normal, $cl-txt-secundario, $fonte-porto, 0, 2.4rem);
+  @include style.fontTexto(1.6rem, normal, txt.$secundario, $fonte-porto, 0, 2.4rem);
   display: block;
+
+  .modo-escuro & {
+    @include style.fontTexto(1.6rem, normal, txt.$secundario-escuro, $fonte-porto, 0, 2.4rem);
+  }
 }
 
 button {
-  @include tamanho(30%, 4.4rem, 0, 0 1.2rem);
-  @include exibicao(row, center, center, 0.8rem);
-  @include fontTexto(1.6rem, bold, $cl-txt-inverso, $fonte-os, 0.4px, 2rem);
-
-  background: $cl-sup-btn-off;
-
-  border: none;
-  border-radius: $rai-cnc;
-
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-
-  &:hover {
-    background: $cl-sup-btn-hover;
-  }
-
-  &:active {
-    background: $cl-sup-btn-on;
-  }
+  @include style.botao()
 }

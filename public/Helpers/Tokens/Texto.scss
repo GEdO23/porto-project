@@ -1,0 +1,24 @@
+@use '../Primitivos/Cores' as cor;
+
+// TOKENS
+// Cores de texto
+$primario: cor.$cor-1000;
+$secundario: cor.$cor-800;
+$terciario: cor.$cor-600;
+$inverso: cor.$cor-50;
+$marca: cor.$azul-celeste;
+
+$input-placeholder: cor.$cor-1000;
+$botao: cor.$cor-900;
+
+$laranja: cor.$harvest-gold;
+$azul: cor.$persian-blue;
+$vermelha: cor.$cardinal-red;
+
+$primario-escuro: cor.$cor-0;
+$secundario-escuro: cor.$cor-200;
+$inverso-escuro: cor.$cor-900;
+$marca-escuro: cor.$azul-ceu-vivido;
+
+$input-placeholder-escuro: cor.$cor-0;
+$botao-escuro: cor.$cor-50;
